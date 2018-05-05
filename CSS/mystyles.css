@@ -1,0 +1,14 @@
+h3{color:purple; text-align:left} 
+h1{text-align:left}
+body{font-family:"arial", sans-serif; font-size:12px; font-color:#CC3333; margin:10px; padding:10px}
+h4{background-color:#000; color:#fff; text-align:center; text-decoration:underline; text-transform:uppercase; letter-spacing:1.5px}
+ul{color:blue; list-style-type:square}
+ul.spottings{color:#FF0}
+a:link {color:white}
+a:visited {color:black}
+a:hover {color:yellow}
+a:active{color:yellow}
+a{text-decoration:none}
+.isbold{font-weight:bold}
+.imadiv{width:33%; float:left; background-color:blue; border-width:1px; border-color:black; border-style:solid; border-radius:5px; box-shadow:10px 10px 10px 10px black}
+#navigation{background-color:grey; color:white; padding:5x; font-weight:bold; width:740px; border-style:solid; border-width:0px; border-bottom-width:2px; border-color:red}
