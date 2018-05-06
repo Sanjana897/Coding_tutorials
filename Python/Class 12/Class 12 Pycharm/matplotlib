@@ -1,0 +1,159 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.title("Chart")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+
+"""
+plt.plot([5, 5], [1, 7]) #regular points
+plt.plot(5,5) #Can't plot only one point, doesn't show up
+plt.show()
+"""
+
+"""
+plt.plot(6, 8, 'bo') #blue dot
+plt.plot(2, 'r+') #red plus sign
+plt.show()
+"""
+
+"""
+#Plotting with one argument
+plt.plot([1, 2, 3, 4, 5]) # treated as y values, x's will be 0, 1, 2, 3, 4
+plt.show()
+"""
+
+"""
+#Plotting with two arguments
+plt.plot([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], #first set treated as x
+    [0, 0, 5, 5, 10, 10, 5, 5, 0, 0]) #second set treated as y
+plt.show()
+"""
+
+"""
+#Plotting with three arguments
+plt.plot([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [0, 2, 2, 3, 5, 8, 9, 10, 8, 10], 'r--')
+plt.show()
+"""
+
+"""
+#Can plot multiple graphs simultaneously, on the same axes
+plt.plot([0, 2, 2, 3, 5, 8, 9, 10])
+plt.plot([0, 4, 5, 5, 4, 5, 7, 9])
+plt.show()
+"""
+
+"""
+#Can have multiple plots in the same call to plot
+plt.plot([0, 2, 2, 3, 5, 8, 9, 10], 'r-',
+        [0, 4, 5, 5, 4, 5, 7, 9], 'b:')
+plt.show()
+"""
+
+"""
+#Different formats
+plt.plot([0, 2, 2, 3, 5, 8, 9, 10], 'g--') #Dashed green
+plt.plot([0, 4, 5, 5, 2, 5, 7, 9], ':k') #Dotted black
+plt.plot([0, 1, 2, 3, 4, 5, 6, 7], 'r-') #Solid red
+plt.show()
+"""
+
+"""
+#Formatting with keyword arguments
+plt.plot([0, 4, 5, 5, 2, 5, 7, 9],
+        color='#ff0000',
+        linestyle='dotted',
+        marker='o')
+plt.show()
+"""
+
+"""
+arr = np.array([5, 7, 9])  #Convert a list to an array
+print(arr)
+arr = np.arange(10, 20) #Create an array, 10 up through and including 19
+print(arr)
+print(arr[0])           #Index
+print(arr + 100)        #Add
+print(arr > 15)         #Compare (you get an array back with booleans!)
+print(arr[arr > 15])    #New array of elements where index expression is true!?
+
+foo = np.zeros(5)          #5 0's
+print(foo)
+##########################################
+#bar = np.zeros((3, 3))       #3 x 3 matrix of 0's
+#print(bar)
+baz = np.linspace(0, 1, 6) #6 values evenly distributed between 0 and 1
+print(baz)
+
+rando = np.random.rand(100) # 100 random numbers between 0 and 1 (uniform distribution)
+print(rando)
+randomer = np.random.randn(100) #100 random numbers between 0 and 1 (normal/gaussian distribution)
+print(randomer)
+
+"""
+
+"""
+#Using numpy and matplotlib
+x = np.random.rand(10)
+plt.plot(x, 'g--')
+plt.show()
+"""
+
+"""
+#Using numpy and matplotlib
+x = np.arange(1, 10)
+y = x ** 2
+plt.plot(x, y, 'k--')
+plt.title('I am a stress eater')
+plt.ylabel('No. of desserts')
+plt.xlabel('Amt. of stress')
+plt.show()
+"""
+
+"""
+#Chart is drawn, but not visible
+#Because automatic axis limits
+plt.plot([1, 2, 3, 4, 5, 5, 5],
+        [3, 4, 4, 2, 1, 2, 3])
+plt.show()
+"""
+
+"""
+#Setting the axis limits so the chart is better visible
+plt.plot([1, 2, 3, 4, 5, 5, 5],
+        [3, 4, 4, 2, 1, 2, 3])
+plt.xlim(0, 10)
+plt.ylim(0, 10)
+plt.show()
+"""
+
+"""
+#Setting the ticks on the axes
+import numpy as np
+x = np.arange(1, 101)
+y = x ** 3
+plt.plot(x, y, 'k-')
+plt.xticks([0, 25, 50, 75, 100])
+plt.yticks([0, 1000000], ['smol', 'extra'])
+plt.show()
+"""
+
+"""
+#Some animals
+animals = ('Snake', 'Human','Octopus')
+
+#Their arms (the y values)
+num_arms = [0, 2, 8]
+
+#The x values (0, 1, or 2)
+x = np.arange(len(animals))
+
+#Plotting bar graph
+plt.bar(x, num_arms, align='center') #right and left align don't work for some reason
+plt.xticks(x, animals)
+plt.ylim(0, 10)
+plt.ylabel('Arms')
+plt.xlabel('Animal')
+plt.title('Number of Arms')
+plt.show()
+"""

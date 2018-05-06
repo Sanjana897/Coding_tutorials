@@ -1,0 +1,21 @@
+*list out the package or packages you're using as links to the package page on pypi.org
+
+DateTime: https://pypi.org/project/DateTime/#description
+
+* discuss why are you interested in the package(s)
+
+I asked a friend of mine, who’s an engineer at Bluecore, which packages he uses the most. 
+He said datetime, logging and unittest, so I decided to try experimenting with datetime.
+
+* explain how they are relevant to your area of study or research
+
+It’s a package that seems to be extremely useful - I feel like almost every site or software product probably uses it in some way or another, since it’s used to create time stamps, among other things. An application that’s immediately coming to my mind is a webpage that times out after a certain amount of inactivity.
+
+* is/are they: recently updated, been around for a long time, popular?
+
+The release history on the pypi.org website shows that it’s updated often, at least once a year, if not multiple times a year. It’s been around since 2008. 
+
+* list out the links to tutorials or documentation that you used to write your sample / demo code
+
+https://docs.python.org/2/library/datetime.html
+http://www.pythonforbeginners.com/basics/python-datetime-time-examples

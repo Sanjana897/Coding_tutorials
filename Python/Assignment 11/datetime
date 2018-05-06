@@ -1,0 +1,20 @@
+import datetime
+
+print("Current date and time: " , datetime.datetime.now())
+print("Formatted to look like this: " ,datetime.datetime.now().strftime("%y-%m-%d, %H:%M"))
+
+#Broken up into into individual elements:
+year = datetime.date.today().strftime("%Y")
+month = datetime.date.today().strftime("%B")
+weekday = datetime.date.today().strftime("%A")
+
+#Repeatedly asking the user whether they want to know the year, month, or day
+response = 0
+while response != "q":
+    response = input("Which do you want to know?\nYear(y), Month(m) or Day(d)\nPress (q) to quit\n")
+    if response == "y":
+        print("The year is {}".format(year))
+    elif response == "m":
+        print("The month is {}".format(month))
+    elif response == "d":
+        print("The day of the week is {}".format(weekday))
