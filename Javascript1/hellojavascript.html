@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script src="woohoo.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+     		$(document).ready(function(){  //First we create a function, as soon as the document is ready, to handle this
+     
+     		$("#HideMe").click(function(){   //was HideMe clicked?  Then call jquery's hide function on all the P's
+           $("p").hide();
+      		});
+
+     		$("#ShowMe").click(function(){   //was ShowMe clicked?  Then call jquery's show function on all the P's
+           $("p").show();
+      });
+});
+</script>
+
+	</head>
+	
+	<body>
+		<button onClick='javascript:alert("Hello World, I'm embedded!");' >Click Me!</button>
+		<script>greet( "Zoe", "Hello" );</script>  
+		<p>Hello there folks!</p>
+		<button id="HideMe">Hide this thing!</button>
+		<button id="ShowMe">Show this thing!</button> 
+
+	</body>
+</html>
