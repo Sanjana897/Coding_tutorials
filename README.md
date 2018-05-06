@@ -1,4 +1,4 @@
 # Coding_tutorials
-HTML and CSS taught by Zoe Fraade-Blanar
+HTML, CSS and JavaScript taught by Zoe Fraade-Blanar
 
 Python taught by Joseph Versoza
